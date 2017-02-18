@@ -183,6 +183,35 @@ iPhone:
 		</tr>
 	</table>
 
+7. Enter region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-02-18 00:23:44.448+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-18 00:23:44.837+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-18 00:23:45.269+00</td>
+		</tr>
+	</table>
+
 
 ### Display off + App killed
 
