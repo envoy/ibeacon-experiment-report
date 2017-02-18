@@ -1,6 +1,6 @@
 # iBeacon not working with iPhone issue investigation report
 
-## Manual scenario tests
+## Manual testing with scenarios
 
 User 1 is the iPad app, and user 2 is the iPhone app.
 
