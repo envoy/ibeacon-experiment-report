@@ -4,6 +4,9 @@
 
 ### Display off
 
+iPhone status:
+ - Unplugged
+
 TODO
 
 ### Rebooting
