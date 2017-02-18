@@ -154,7 +154,7 @@ iPhone:
 		</tr>
 	</table>
 
-6. Enter region - Works ✅
+6. Exit region - Works ✅
 
 	<table>
 		<tr>
