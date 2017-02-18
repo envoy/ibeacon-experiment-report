@@ -2,11 +2,14 @@
 
 ## Manual scenario tests
 
+User 1 is the iPad app, and user 2 is the iPhone app.
+
 ### Display off
 
 iPhone status:
  - Unplugged
 
+1. Enter region - Works 👍
 <table>
 	<tr>
 		<th>user_id</th>
@@ -33,6 +36,36 @@ iPhone status:
 		<td>2017-02-18 00:11:03.83+00</td>
 	</tr>
 </table>
+
+2. Exit region - Works 👍
+
+<table>
+	<tr>
+		<th>user_id</th>
+		<th>event</th>
+		<th>message</th>
+		<th>created_at</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>app-will-resign-active</td>
+		<td>app will resign active</td>
+		<td>2017-02-18 00:13:52.27+00</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>app-did-enter-background</td>
+		<td>app did enter background</td>
+		<td>2017-02-18 00:13:52.946+00</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>did-exit-region</td>
+		<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+		<td>2017-02-18 00:14:26.119+00</td>
+	</tr>
+</table>
+
 
 ### Display off + App killed
 
