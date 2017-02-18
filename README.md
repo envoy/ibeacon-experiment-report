@@ -6,7 +6,8 @@ User 1 is the iPad app, and user 2 is the iPhone app.
 
 ### Display off
 
-iPhone status:
+iPhone:
+ - Model: iPhone 6s
  - Unplugged
 
 1. Enter region - Works ✅
@@ -150,6 +151,35 @@ iPhone status:
 			<td>did-enter-region</td>
 			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
 			<td>2017-02-18 00:21:00.181+00</td>
+		</tr>
+	</table>
+
+6. Enter region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-02-18 00:21:56.722+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-02-18 00:21:57.405+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-18 00:22:28.681+00</td>
 		</tr>
 	</table>
 
