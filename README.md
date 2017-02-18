@@ -2,6 +2,10 @@
 
 ## Manual scenario tests
 
+### Display off
+
+TODO
+
 ### Rebooting
 
 TODO:
@@ -9,18 +13,6 @@ TODO:
 1. Enter
 2. Exit
 3. Enter and exit
-
-### App active
-
-TODO:
-
-### Display on
-
-TODO
-
-### Display off
-
-TODO
 
 ## Daily sign-in tests
 
