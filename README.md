@@ -9,7 +9,8 @@ User 1 is the iPad app, and user 2 is the iPhone app.
 iPhone status:
  - Unplugged
 
-1. Enter region - Works 👍
+1. Enter region - Works ✅
+
 <table>
 	<tr>
 		<th>user_id</th>
@@ -37,7 +38,7 @@ iPhone status:
 	</tr>
 </table>
 
-2. Exit region - Works 👍
+2. Exit region - Works ✅
 
 <table>
 	<tr>
@@ -63,6 +64,35 @@ iPhone status:
 		<td>did-exit-region</td>
 		<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
 		<td>2017-02-18 00:14:26.119+00</td>
+	</tr>
+</table>
+
+3. Enter region - Works ✅
+
+<table>
+	<tr>
+		<th>user_id</th>
+		<th>event</th>
+		<th>message</th>
+		<th>created_at</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>app-will-enter-foreground</td>
+		<td>app will enter foreground</td>
+		<td>2017-02-18 00:18:27.805+00</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>app-did-become-active</td>
+		<td>app did become active</td>
+		<td>2017-02-18 00:18:28.198+00</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>did-enter-region</td>
+		<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+		<td>2017-02-18 00:18:28.962+00</td>
 	</tr>
 </table>
 
