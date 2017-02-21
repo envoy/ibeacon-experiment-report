@@ -20,8 +20,6 @@ We registered users on our simple REST API server representing as different role
    - Model: MD528TA/A
    - OS: 9.3.4
 
-User 1 is the iPad app, and user 2 is the iPhone app.
-
 ### Display off
 
 iPhone:
