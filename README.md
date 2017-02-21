@@ -288,7 +288,7 @@ Both iPad mini and iPhone are unplugged.
 		</tr>
 	</table>
 
-7. Exit region - Works ✅
+8. Exit region - Works ✅
 
 	<table>
 		<tr>
@@ -323,7 +323,7 @@ Both iPad mini and iPhone are unplugged.
 		</tr>
 	</table>
 
-8. Enter region - Works ✅
+9. Enter region - Works ✅
 
 	<table>
 		<tr>
@@ -358,7 +358,7 @@ Both iPad mini and iPhone are unplugged.
 		</tr>
 	</table>
 
-9. Exit region - Works ✅
+10. Exit region - Works ✅
 
 	<table>
 		<tr>
