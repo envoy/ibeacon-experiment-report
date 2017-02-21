@@ -19,6 +19,8 @@ We registered users on our simple REST API server representing as different role
    - Device: 1iPad mini 16 GB (Wi-Fi Only/1st Gen)
    - Model: MD528TA/A
    - OS: 9.3.4
+   
+To simulate entering iBeacon region, we make the iPad app active, it will then broadcast iBeacon signals. To simulate leaving iBeacon region, we make the iPad app goes into background, then it will stop broadcasting.
 
 ### Display off
 
