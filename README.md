@@ -1112,11 +1112,9 @@ Both iPad mini and iPhone are unplugged, the app is killed everytime before we r
 
 ### Display off after rebooting
 
-TODO:
+In this testing scenario, we basically turn off the device, then turn it on and unlock it. Put it into sleep mode. Then stop and start iBeacon signal. 
 
-1. Enter
-2. Exit
-3. Enter and exit
+TODO:
 
 ## Daily sign-in tests
 
