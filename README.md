@@ -393,9 +393,153 @@ Both iPad mini and iPhone are unplugged.
 		</tr>
 	</table>
 
-
-
 ### Display off + App killed
+
+Both iPad mini and iPhone are unplugged, the app is killed everytime before we run either entering and exiting region test. Interestingly we found that the app won't be shown in active app list (double tapping home button), you need to tap on the app icon so that it will be shown in the list and therefore can be killed.
+
+1. Enter region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-02-21 22:13:55.182+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-21 22:13:55.565+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1), os_version=10.2.1, systemUpTime=210922.996781792, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+			<td>2017-02-21 22:13:55.667+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 22:13:55.729+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-02-21 22:13:55.75+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-02-21 22:13:55.755+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x17e9ec50> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1), os_version=9.3.4, systemUpTime=6820.90521525, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+			<td>2017-02-21 22:13:56.301+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x17eadc50> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 22:13:56.414+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-02-21 22:13:56.42+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-02-21 22:13:56.441+00</td>
+		</tr>
+	</table>
+
+2. Exit region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-02-21 22:15:38.948+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-02-21 22:15:39.622+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1), os_version=10.2.1, systemUpTime=211057.329768458, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+			<td>2017-02-21 22:16:09.982+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 22:16:10.02+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-02-21 22:16:10.038+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-02-21 22:16:10.043+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x1467ccf0> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1), os_version=9.3.4, systemUpTime=6944.85695408333, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+			<td>2017-02-21 22:16:17.769+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x145530d0> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 22:16:17.788+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-02-21 22:16:17.801+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-02-21 22:16:17.81+00</td>
+		</tr>
+	</table>
+
+
 
 ### Display off after rebooting
 
