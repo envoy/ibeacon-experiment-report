@@ -78,6 +78,111 @@ Both iPad mini and iPhone are unplugged.
 		</tr>
 	</table>
 
+2. Exit region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-02-21 21:49:58.97+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-02-21 21:49:59.666+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 21:50:34.339+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x155eb590> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 21:50:38.847+00</td>
+		</tr>
+	</table>
+
+3. Enter region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-02-21 21:55:30.631+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-21 21:55:31.053+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 21:55:31.3+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x15677380> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 21:55:31.838+00</td>
+		</tr>
+	</table>
+
+4. Exit region - Works ✅
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-02-21 21:56:03.974+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-02-21 21:56:04.663+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 21:56:37.412+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>did-exit-region</td>
+			<td>did exit region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x155ed1b0> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-21 21:56:43.02+00</td>
+		</tr>
+	</table>
+
 
 ### Display off + App killed
 
