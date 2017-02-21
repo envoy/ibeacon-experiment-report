@@ -2,6 +2,24 @@
 
 ## Manual testing with scenarios
 
+We registered users on our simple REST API server representing as different roles in the testing. Here's the users
+
+ - User 1:
+   - Role: iBeacon signal source
+   - Device: iPad Air (Wi-Fi Only)
+   - Model: MD788LL/B
+   - OS: 10.2.1
+ - User 2:
+   - Role: iBeacon signal receiver
+   - Device: iPhone 6s 64GB (Unlocked)
+   - Model: MKRJ2LL/A
+   - OS: 10.2.1
+ - User 3:
+   - Role: iBeacon signal receiver
+   - Device: 1iPad mini 16 GB (Wi-Fi Only/1st Gen)
+   - Model: MD528TA/A
+   - OS: 9.3.4
+
 User 1 is the iPad app, and user 2 is the iPhone app.
 
 ### Display off
