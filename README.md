@@ -1308,7 +1308,123 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 	
 	So our guess, the OS is working fine managing the state of iBeacon regions, however, previous registrations for region monitoring from apps are not persisted or not present after reboot.
 
-TODO:
+4. Exit region - Doesn't works ❌
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-02-22 00:38:01.221+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-02-22 00:38:01.896+00</td>
+		</tr>
+	</table>
+	
+	And like what we saw with previous entering region test, even if we start the app manually after stop broadcasting, we won't see the exit region event.
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1), os_version=10.2.1, systemUpTime=194.661072333333, options=nil</td>
+			<td>2017-02-22 00:41:02.665+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-22 00:41:02.673+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-02-22 00:41:02.674+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-02-22 00:41:02.675+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x165b78f0> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1), os_version=9.3.4, systemUpTime=176.655739416667, options=nil</td>
+			<td>2017-02-22 00:41:05.831+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-22 00:41:05.879+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-02-22 00:41:05.887+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-02-22 00:41:05.895+00</td>
+		</tr>
+	</table>
+
+	However, if we start broadcasting again, we can see the enter event after we manually launch the app. 
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-02-22 00:43:15.532+00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:&lt;__NSConcreteUUID 0x165800b0> 5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-22 00:43:15.653+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-22 00:43:15.96+00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'ibeacon-test.envoy.com', uuid:5E759524-B7F2-4F3A-81E6-73B2F9728AAB, major:1, minor:1)</td>
+			<td>2017-02-22 00:43:16.036+00</td>
+		</tr>
+	</table>
+
 
 ## Daily sign-in tests
 
