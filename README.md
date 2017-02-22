@@ -1114,6 +1114,56 @@ Both iPad mini and iPhone are unplugged, the app is killed everytime before we r
 
 In this testing scenario, we basically turn off the device, then turn it on and unlock it. Put it into sleep mode. Then stop and start iBeacon signal. 
 
+1. Enter region - Doesn't works ❌
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-02-21 22:51:13.175+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-02-21 22:51:13.564+00</td>
+		</tr>
+	</table>
+
+Note: after 30 minutes, still not seeing any events from both devices.
+
+2. Exit region - Doesn't works ❌
+
+	<table>
+		<tr>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-02-21 23:30:34.453+00</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-02-21 23:30:35.137+00</td>
+		</tr>
+	</table>
+
+Note: after 30 minutes, still not seeing any events from both devices.
+
 TODO:
 
 ## Daily sign-in tests
