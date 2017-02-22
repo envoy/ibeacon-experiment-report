@@ -10,6 +10,11 @@ To make collecting data easily, we have three projects
  
 All the logs will be written into `NSUserDefaults` and then syn to the API server. In this way, even if we encounter networking issue, the log will still persist and eventually uploaded to server at some point.
 
+To be sure the iPad does the iBeacon broadcasting correctly, we use [iBeaconScanner](https://github.com/liamnichols/iBeaconScanner) to see if the iBeacon signal is really be broadcasting correctly.
+
+![iBeaconScanner](/Screen Shot 2017-02-17 at 4.07.37 PM.png?raw=true "iBeaconScanner")
+
+
 ## Manual testing with scenarios
 
 We registered users on our simple REST API server representing as different roles in the testing. Here's the users
