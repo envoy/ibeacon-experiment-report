@@ -14,7 +14,7 @@ To be sure the iPad does the iBeacon broadcasting correctly, we use [iBeaconScan
 
 ![iBeaconScanner](/Screen Shot 2017-02-17 at 4.07.37 PM.png?raw=true "iBeaconScanner")
 
-The physical setup is very simple, just put the broadcasting iPad on an iPad stand, the other devices laying on table.
+The physical setup is very simple, just put the broadcasting iPad on an iPad stand with "thi sis fine" dog by its side, and the other devices are laying on table.
 
 ![Physical setup](/IMG_9715.JPG?raw=true "Physical setup")
 
