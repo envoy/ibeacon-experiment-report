@@ -1137,7 +1137,7 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 		</tr>
 	</table>
 
-Note: after 30 minutes, still not seeing any events from both devices.
+	Note: after 30 minutes, still not seeing any events from both devices.
 
 2. Exit region - Doesn't works ❌
 
@@ -1162,7 +1162,7 @@ Note: after 30 minutes, still not seeing any events from both devices.
 		</tr>
 	</table>
 
-Note: after 30 minutes, still not seeing any events from both devices.
+	Note: after 30 minutes, still not seeing any events from both devices.
 
 TODO:
 
