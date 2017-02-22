@@ -1,5 +1,15 @@
 # iBeacon not working with iPhone issue investigation report
 
+## Methodology
+
+To make collecting data easily, we have three projects
+
+ - https://github.com/envoy/ibeacon-experiment-ipad As the iBeacon signal source (the one broadcasts)
+ - https://github.com/envoy/ibeacon-experiment-iphone As the iBeacon signal receiver
+ - https://github.com/envoy/ibeacon-experiment-api As a simple REST API for collecting data
+ 
+All the logs will be written into `NSUserDefaults` and then syn to the API server. In this way, even if we encounter networking issue, the log will still persist and eventually uploaded to server at some point.
+
 ## Manual testing with scenarios
 
 We registered users on our simple REST API server representing as different roles in the testing. Here's the users
