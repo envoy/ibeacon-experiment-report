@@ -8,7 +8,7 @@ To make collecting data easily, we have three projects
  - https://github.com/envoy/ibeacon-experiment-iphone As the iBeacon signal receiver
  - https://github.com/envoy/ibeacon-experiment-api As a simple REST API for collecting data
  
-All the logs will be written into `NSUserDefaults` and then syn to the API server. In this way, even if we encounter networking issue, the log will still persist and eventually uploaded to server at some point.
+All the logs will be written into `NSUserDefaults` and then syn to the API server. In this way, even if we encounter networking issue, the log will still persist and eventually uploaded to server at some point. The code we wrote for iBeacon broadcasting and monitoring, we did our best to keep the code as simple as possible to avoid any potential side effects.
 
 To be sure the iPad does the iBeacon broadcasting correctly, we use [iBeaconScanner](https://github.com/liamnichols/iBeaconScanner) to see if the iBeacon signal is really be broadcasting correctly.
 
