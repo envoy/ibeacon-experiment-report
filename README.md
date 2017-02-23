@@ -1443,6 +1443,24 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 		</tr>
 	</table>
 
+#### Reply from Apple:
+
+
+> One thing I should point out is that, iBeacon Region Monitoring does not become active after a few minutes have passed right after a reboot or similar power event (for example Airplane mode turned on and then off).
+
+> Any applications with pending beacon regions being monitored will eventually get relaunched after a reboot once the few minutes has past. The beacons will start getting detected and your app would be launched as necessary when an entry or exit event is detected. The key here is, “when an entry or exit event is detected"
+
+> There is no magic here, and as long as the iBeacons are advertising correctly at the specified advertising rate, this will work.
+
+> If there are no mistakes on either the beacons or the app side, once this time has passed, your app should be relaunched. If not, we should look further.
+
+> When there are problems past these few minutes, there are two places to look.
+
+> First, and most important is the beacon advertising. In many cases, in order to save battery on the beacons, the advertising rate is slowed down from the specified rate. When the advertising is not to spec, even though things seem to work under ideal conditions, edge cases start to fail. So, it is always a good idea to make sure the beacons are advertising exactly to the specifications.
+
+> Alternatively, you could have something in your app code that is leaving you with no active regions in an edge case. If the abovementioned delay doesn’t answer your question, and the advertising is to the specs, we can start considering your app code.
+
+So looks like we need to adjust the way we do testing rebooting case, wait a while after reboot, see if it is working as expected.
 
 ## Daily sign-in tests
 
