@@ -1460,7 +1460,7 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 
 > Alternatively, you could have something in your app code that is leaving you with no active regions in an edge case. If the abovementioned delay doesn’t answer your question, and the advertising is to the specs, we can start considering your app code.
 
-So looks like we need to adjust the way we do testing rebooting case, wait a while after reboot, see if it is working as expected.
+So looks like we need to adjust the way we test rebooting case, wait a while after reboot, see if it is working as expected.
 
 ## Daily sign-in tests
 
