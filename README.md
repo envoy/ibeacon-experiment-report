@@ -1132,7 +1132,7 @@ Both iPad mini and iPhone are unplugged, the app is killed everytime before we r
 
 In this testing scenario, we basically turn off the device, then turn it on and unlock it. Put it into sleep mode. Then stop and start iBeacon signal. 
 
-1. Enter region - Doesn't works ❌
+1. Enter region - Doesn't work ❌
 
 	<table>
 		<tr>
@@ -1157,7 +1157,7 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 
 	Note: after 30 minutes, still not seeing any events from both devices.
 
-2. Exit region - Doesn't works ❌
+2. Exit region - Doesn't work ❌
 
 	<table>
 		<tr>
@@ -1326,7 +1326,7 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 	
 	So our guess, the OS is working fine managing the state of iBeacon regions, however, previous registrations for region monitoring from apps are not persisted or not present after reboot.
 
-4. Exit region - Doesn't works ❌
+4. Exit region - Doesn't work ❌
 
 	<table>
 		<tr>
@@ -1527,7 +1527,7 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 		</tr>
 	</table>
 
-2. Exit region - Doesn't works ❌
+2. Exit region - Doesn't work ❌
 
         After several minutes, we still cannot see any exit region event
 
@@ -1558,7 +1558,7 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 		</tr>
 	</table>
 
-3. Enter region -  Doesn't works ❌
+3. Enter region - Doesn't work ❌
 
         After several minutes, we still cannot see any enter region event, even if we launch the app manuall
 
@@ -1682,6 +1682,36 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 		</tr>
 	</table>
 
+5. Enter region - Doesn't work ❌
+
+	<table>
+		<tr>
+			<th>id</th>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+			<th>uploaded_at</th>
+		</tr>
+		<tr>
+			<td>7E058A24-7E11-4E76-A563-C8BC54B40750</td>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-03-01 21:54:26.067+00</td>
+			<td>2017-03-01 21:54:26.433145+00</td>
+		</tr>
+		<tr>
+			<td>04C15BC3-5D8A-448B-B72B-C8D4A26204AB</td>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-03-01 21:54:26.466+00</td>
+			<td>2017-03-01 21:54:26.533865+00</td>
+		</tr>
+	</table>
+	
+	TODO:
 
 TODO:
 
