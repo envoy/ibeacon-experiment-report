@@ -1462,6 +1462,12 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 
 So looks like we need to adjust the way we test rebooting case, wait a while after reboot, see if it is working as expected.
 
+### Display off after rebooting + 5 minutes delay
+
+As Apple said that it takes a while before the app which monitering iBeacon signal got relaunched after rebooting, we rerun the test with 5 minutes delay after rebooting here, to ensure it will work here.
+
+TODO:
+
 ## Daily sign-in tests
 
 TODO:
