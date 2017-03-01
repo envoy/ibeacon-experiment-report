@@ -2042,6 +2042,72 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 
     not working at all
 
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 15:44:17.95-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 15:44:18.623-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>app-launch</td>
+            <td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.2.1, systemUpTime=497.339341125, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+            <td>2017-03-01 15:45:00.041-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>did-exit-region</td>
+            <td>did exit region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
+            <td>2017-03-01 15:45:00.058-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>cl-authorized-always</td>
+            <td>CoreLocation authorized always</td>
+            <td>2017-03-01 15:45:00.061-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>cb-power-on</td>
+            <td>CoreBluetooth power on</td>
+            <td>2017-03-01 15:45:00.066-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-enter-foreground</td>
+            <td>app will enter foreground</td>
+            <td>2017-03-01 15:46:45.073-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>did-enter-region</td>
+            <td>did enter region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
+            <td>2017-03-01 15:46:45.158-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 15:46:45.484-08</td>
+        </tr>
+    </table>
+
+    This time I did not launch the app, I only unlock my phone, and turned out it starts receiving events
+    
+After testing around rebooting cases, at least given the setup we have and logs above, we came to a conclusion, iBeacon monitoring can be broken after rebooting. The behavior is kind of Flaky, sometimes it works, sometimes it doesn't.
 
 ## Daily sign-in tests
 
