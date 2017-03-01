@@ -1946,6 +1946,102 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
         </tr>
     </table>
 
+8. Exit region - Doesn't work ❌
+
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 15:17:11.208-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 15:17:11.874-08</td>
+        </tr>
+    </table>
+    
+    nope, it's not working
+    
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-enter-foreground</td>
+            <td>app will enter foreground</td>
+            <td>2017-03-01 15:23:47.799-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 15:23:48.193-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 15:26:02.702-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 15:26:03.374-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-enter-foreground</td>
+            <td>app will enter foreground</td>
+            <td>2017-03-01 15:28:43.414-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 15:28:43.812-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 15:30:28.351-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 15:30:29.013-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-enter-foreground</td>
+            <td>app will enter foreground</td>
+            <td>2017-03-01 15:32:21.357-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 15:32:21.759-08</td>
+        </tr>
+    </table>
+
+    not working at all
+
 
 ## Daily sign-in tests
 
