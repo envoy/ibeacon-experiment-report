@@ -1529,6 +1529,8 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 
 2. Exit region - Doesn't works ❌
 
+        After several minutes, we still cannot see any exit region event
+
 	<table>
 		<tr>
 			<th>id</th>
@@ -1555,6 +1557,70 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 			<td>2017-03-01 20:21:57.246361+00</td>
 		</tr>
 	</table>
+
+3. Enter region -  Doesn't works ❌
+
+         After several minutes, we still cannot see any enter region event, even if we launch the app manuall
+
+	<table>
+		<tr>
+			<th>id</th>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+			<th>uploaded_at</th>
+		</tr>
+		<tr>
+			<td>C0F56363-1021-438A-B3B9-FD107BD9A65D</td>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-03-01 21:09:36.722+00</td>
+			<td>2017-03-01 21:09:37.104953+00</td>
+		</tr>
+		<tr>
+			<td>7C379307-3F4E-4704-B1AC-F595B79966CE</td>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-03-01 21:09:37.123+00</td>
+			<td>2017-03-01 21:09:37.220473+00</td>
+		</tr>
+		<tr>
+			<td>B01F1F37-1429-4004-8ED0-44C570C7F4C6</td>
+			<td>2</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.2.1, systemUpTime=167.965210833333, options=nil</td>
+			<td>2017-03-01 21:14:33.473+00</td>
+			<td>2017-03-01 21:14:33.868017+00</td>
+		</tr>
+		<tr>
+			<td>4292E531-0BFC-43DA-ABD2-15E4E3E21871</td>
+			<td>2</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-03-01 21:14:33.48+00</td>
+			<td>2017-03-01 21:14:34.030155+00</td>
+		</tr>
+		<tr>
+			<td>EE9D1856-2921-4206-8059-9F20FC351A33</td>
+			<td>2</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-03-01 21:14:33.48+00</td>
+			<td>2017-03-01 21:14:34.054128+00</td>
+		</tr>
+		<tr>
+			<td>ADBA1AEC-7ADD-4C26-B6B2-7D4D00E60578</td>
+			<td>2</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-03-01 21:14:33.481+00</td>
+			<td>2017-03-01 21:14:34.11722+00</td>
+		</tr>
+	</table>
+
 
 TODO:
 
