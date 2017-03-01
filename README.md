@@ -1467,6 +1467,7 @@ So looks like we need to adjust the way we test rebooting case, wait a while aft
 As Apple said that it takes a while before the app which monitering iBeacon signal got relaunched after rebooting, we rerun the test with 5 minutes delay after rebooting here, to ensure it will work here.
 
 1. Enter region - Works ✅
+
 	<table>
 		<tr>
 			<th>id</th>
@@ -1526,6 +1527,34 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 		</tr>
 	</table>
 
+2. Exit region - Doesn't works ❌
+
+	<table>
+		<tr>
+			<th>id</th>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+			<th>uploaded_at</th>
+		</tr>
+		<tr>
+			<td>BC2890B1-B38F-4025-B078-23CC72AA7ED5</td>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-03-01 20:21:56.501+00</td>
+			<td>2017-03-01 20:21:56.871914+00</td>
+		</tr>
+		<tr>
+			<td>E92E0FE4-8522-47BE-8340-86169371D41D</td>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-03-01 20:21:57.133+00</td>
+			<td>2017-03-01 20:21:57.246361+00</td>
+		</tr>
+	</table>
 
 TODO:
 
