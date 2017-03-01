@@ -1711,7 +1711,97 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 		</tr>
 	</table>
 	
-	TODO:
+	hmmm, so nothing happend, then let's put the iPad app in background (stop broadcasting), see if anything happens
+	
+	<table>
+		<tr>
+			<th>id</th>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+			<th>uploaded_at</th>
+		</tr>
+		<tr>
+			<td>49B39941-6928-4F97-A465-2935C286081B</td>
+			<td>1</td>
+			<td>app-will-resign-active</td>
+			<td>app will resign active</td>
+			<td>2017-03-01 22:03:03.16+00</td>
+			<td>2017-03-01 22:03:03.534568+00</td>
+		</tr>
+		<tr>
+			<td>B5AD66AB-73AF-4E8A-87A7-2342D28D6490</td>
+			<td>1</td>
+			<td>app-did-enter-background</td>
+			<td>app did enter background</td>
+			<td>2017-03-01 22:03:03.835+00</td>
+			<td>2017-03-01 22:03:03.885553+00</td>
+		</tr>
+	</table>
+	
+	nope, nothing. let's bring it into foreground again.
+
+	<table>
+		<tr>
+			<th>id</th>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+			<th>uploaded_at</th>
+		</tr>
+		<tr>
+			<td>1599FF95-D3A1-4656-B582-EC6F42031B4B</td>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-03-01 22:07:00.522+00</td>
+			<td>2017-03-01 22:07:00.848614+00</td>
+		</tr>
+		<tr>
+			<td>7D7C75BC-38B7-4851-94CA-1A6082AE2518</td>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-03-01 22:07:00.918+00</td>
+			<td>2017-03-01 22:07:00.967035+00</td>
+		</tr>
+		<tr>
+			<td>3B39B998-E44A-49D9-B7FF-22018DC1D938</td>
+			<td>2</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.2.1, systemUpTime=219.117376583333, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+			<td>2017-03-01 22:07:01.418+00</td>
+			<td>2017-03-01 22:07:01.760111+00</td>
+		</tr>
+		<tr>
+			<td>2C277CF6-87CE-456C-9FBB-25B4896EEA6E</td>
+			<td>2</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
+			<td>2017-03-01 22:07:01.424+00</td>
+			<td>2017-03-01 22:07:01.869559+00</td>
+		</tr>
+		<tr>
+			<td>25DFBA67-F707-4AFC-8FED-9EB3D8EF26CB</td>
+			<td>2</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-03-01 22:07:01.425+00</td>
+			<td>2017-03-01 22:07:01.873111+00</td>
+		</tr>
+		<tr>
+			<td>756DB11D-D64A-4D11-84FA-751A994FC723</td>
+			<td>2</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-03-01 22:07:01.426+00</td>
+			<td>2017-03-01 22:07:01.877323+00</td>
+		</tr>
+	</table>
+	
+	there you go, it finally receives event
 
 TODO:
 
