@@ -1823,10 +1823,82 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
         </tr>
     </table>
     
-    yep, it just stops working.
+    yep, it just stops working. let's unlock iPhone and luanch app again (somehow it takes a long while from tapping app icon to really luanch, not sure how could this affect the ibeacon monitoring)
+    
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>app-launch</td>
+            <td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.2.1, systemUpTime=188.524869833333, options=nil</td>
+            <td>2017-03-01 14:47:15.872-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 14:47:15.905-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>cl-authorized-always</td>
+            <td>CoreLocation authorized always</td>
+            <td>2017-03-01 14:47:15.908-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>cb-power-on</td>
+            <td>CoreBluetooth power on</td>
+            <td>2017-03-01 14:47:15.909-08</td>
+        </tr>
+    </table>
 
+    and finally, we see event
 
-TODO:
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 14:49:09.665-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 14:49:10.247-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 14:49:18.259-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 14:49:18.263-08</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>did-exit-region</td>
+            <td>did exit region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
+            <td>2017-03-01 14:51:41.04-08</td>
+        </tr>
+    </table>
+
 
 ## Daily sign-in tests
 
