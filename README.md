@@ -1182,7 +1182,7 @@ In this testing scenario, we basically turn off the device, then turn it on and 
 
 	Note: after 30 minutes, still not seeing any events from both devices.
 
-3. Enter region - Doesn't works ❌
+3. Enter region - Doesn't work ❌
 
 	<table>
 		<tr>
