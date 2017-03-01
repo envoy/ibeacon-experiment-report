@@ -1466,6 +1466,67 @@ So looks like we need to adjust the way we test rebooting case, wait a while aft
 
 As Apple said that it takes a while before the app which monitering iBeacon signal got relaunched after rebooting, we rerun the test with 5 minutes delay after rebooting here, to ensure it will work here.
 
+1. Enter region - Works ✅
+	<table>
+		<tr>
+			<th>id</th>
+			<th>user_id</th>
+			<th>event</th>
+			<th>message</th>
+			<th>created_at</th>
+			<th>uploaded_at</th>
+		</tr>
+		<tr>
+			<td>2F10B181-280E-4E7A-8382-1DA637FDBA40</td>
+			<td>1</td>
+			<td>app-will-enter-foreground</td>
+			<td>app will enter foreground</td>
+			<td>2017-03-01 12:03:27.008-08</td>
+			<td>2017-03-01 12:03:27.462911-08</td>
+		</tr>
+		<tr>
+			<td>6B1BFA97-F166-40CF-9D8A-EA29AD35D221</td>
+			<td>1</td>
+			<td>app-did-become-active</td>
+			<td>app did become active</td>
+			<td>2017-03-01 12:03:27.521-08</td>
+			<td>2017-03-01 12:03:27.598925-08</td>
+		</tr>
+		<tr>
+			<td>56D38C85-28ED-4B49-A830-D2F89E80115C</td>
+			<td>2</td>
+			<td>app-launch</td>
+			<td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.2.1, systemUpTime=710.101275708333, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+			<td>2017-03-01 12:03:27.849-08</td>
+			<td>2017-03-01 12:03:28.217634-08</td>
+		</tr>
+		<tr>
+			<td>E3780B63-4D9F-4294-8C50-4D2F94167B3B</td>
+			<td>2</td>
+			<td>did-enter-region</td>
+			<td>did enter region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
+			<td>2017-03-01 12:03:27.855-08</td>
+			<td>2017-03-01 12:03:28.346101-08</td>
+		</tr>
+		<tr>
+			<td>650B26E0-213D-4ACD-B5DB-B2DBE4E9A88F</td>
+			<td>2</td>
+			<td>cb-power-on</td>
+			<td>CoreBluetooth power on</td>
+			<td>2017-03-01 12:03:27.856-08</td>
+			<td>2017-03-01 12:03:28.360497-08</td>
+		</tr>
+		<tr>
+			<td>E24B73FF-4DFC-4162-A68D-23E523FE8C5A</td>
+			<td>2</td>
+			<td>cl-authorized-always</td>
+			<td>CoreLocation authorized always</td>
+			<td>2017-03-01 12:03:27.857-08</td>
+			<td>2017-03-01 12:03:28.37302-08</td>
+		</tr>
+	</table>
+
+
 TODO:
 
 ## Daily sign-in tests
