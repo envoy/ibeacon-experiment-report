@@ -1731,6 +1731,101 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 	
 	there you go, it finally receives event
 
+6. Exit region - Doesn't work ❌
+
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 14:34:22.732-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 14:34:23.382-08</td>
+        </tr>
+    </table>
+    
+    not working, let's put it into foreground
+    
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-enter-foreground</td>
+            <td>app will enter foreground</td>
+            <td>2017-03-01 14:39:52.769-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 14:39:53.19-08</td>
+        </tr>
+    </table>
+    
+    still nothing, go into background again
+
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-resign-active</td>
+            <td>app will resign active</td>
+            <td>2017-03-01 14:42:13.395-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-enter-background</td>
+            <td>app did enter background</td>
+            <td>2017-03-01 14:42:14.058-08</td>
+        </tr>
+    </table>
+    
+    nothing, put into foreground again
+
+    <table>
+        <tr>
+            <th>user_id</th>
+            <th>event</th>
+            <th>message</th>
+            <th>created_at</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-will-enter-foreground</td>
+            <td>app will enter foreground</td>
+            <td>2017-03-01 14:46:02.833-08</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>app-did-become-active</td>
+            <td>app did become active</td>
+            <td>2017-03-01 14:46:03.231-08</td>
+        </tr>
+    </table>
+    
+    yep, it just stops working.
+
+
 TODO:
 
 ## Daily sign-in tests
