@@ -1625,60 +1625,46 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 
 	<table>
 		<tr>
-			<th>id</th>
 			<th>user_id</th>
 			<th>event</th>
 			<th>message</th>
 			<th>created_at</th>
-			<th>uploaded_at</th>
 		</tr>
 		<tr>
-			<td>AD6CEDF9-F034-4FFF-A862-4DE41D334A7D</td>
 			<td>1</td>
 			<td>app-will-resign-active</td>
 			<td>app will resign active</td>
-			<td>2017-03-01 21:40:10.941+00</td>
-			<td>2017-03-01 21:40:11.339701+00</td>
+			<td>2017-03-01 13:40:10.941-08</td>
 		</tr>
 		<tr>
-			<td>294B5714-8A45-4A47-92E8-8B5A5A424246</td>
 			<td>1</td>
 			<td>app-did-enter-background</td>
 			<td>app did enter background</td>
-			<td>2017-03-01 21:40:11.589+00</td>
-			<td>2017-03-01 21:40:11.65162+00</td>
+			<td>2017-03-01 13:40:11.589-08</td>
 		</tr>
 		<tr>
-			<td>5D0A4A62-B3CC-46F3-92C5-AA65952C3235</td>
 			<td>2</td>
 			<td>app-launch</td>
 			<td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.2.1, systemUpTime=231.4999445, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
-			<td>2017-03-01 21:40:45.242+00</td>
-			<td>2017-03-01 21:40:45.707103+00</td>
+			<td>2017-03-01 13:40:45.242-08</td>
 		</tr>
 		<tr>
-			<td>D44FA811-EE89-419C-880F-D96C2B3130AA</td>
 			<td>2</td>
 			<td>did-exit-region</td>
 			<td>did exit region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
-			<td>2017-03-01 21:40:45.262+00</td>
-			<td>2017-03-01 21:40:45.858181+00</td>
+			<td>2017-03-01 13:40:45.262-08</td>
 		</tr>
 		<tr>
-			<td>91536998-BE4F-4926-9A7A-43DADCFFCAA4</td>
 			<td>2</td>
 			<td>cl-authorized-always</td>
 			<td>CoreLocation authorized always</td>
-			<td>2017-03-01 21:40:45.264+00</td>
-			<td>2017-03-01 21:40:45.862621+00</td>
+			<td>2017-03-01 13:40:45.264-08</td>
 		</tr>
 		<tr>
-			<td>4D925FDF-8344-48A1-A994-3406FCDD6D84</td>
 			<td>2</td>
 			<td>cb-power-on</td>
 			<td>CoreBluetooth power on</td>
-			<td>2017-03-01 21:40:45.267+00</td>
-			<td>2017-03-01 21:40:45.890525+00</td>
+			<td>2017-03-01 13:40:45.267-08</td>
 		</tr>
 	</table>
 
