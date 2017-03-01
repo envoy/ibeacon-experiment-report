@@ -1560,7 +1560,7 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 
 3. Enter region -  Doesn't works ❌
 
-         After several minutes, we still cannot see any enter region event, even if we launch the app manuall
+        After several minutes, we still cannot see any enter region event, even if we launch the app manuall
 
 	<table>
 		<tr>
