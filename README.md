@@ -2107,7 +2107,7 @@ As Apple said that it takes a while before the app which monitering iBeacon sign
 
     This time I did not launch the app, I only unlock my phone, and turned out it starts receiving events
     
-After testing around rebooting cases, at least given the setup we have and logs above, we came to a conclusion, iBeacon monitoring can be broken after rebooting. The behavior is kind of Flaky, sometimes it works, sometimes it doesn't.
+After testing around rebooting cases, at least given the setup we have and logs above, we came to a conclusion, iBeacon monitoring can be broken after rebooting. The behavior is kind of flaky, sometimes it works, sometimes it doesn't.
 
 ## Daily sign-in tests
 
