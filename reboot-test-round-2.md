@@ -281,3 +281,50 @@ but, my bet is somehow iPhone is confused, maybe it thinks it's in the region, s
 		<td>2017-04-06 18:59:22.722+00</td>
 	</tr>
 </table>
+
+## 7. enter working
+
+<table>
+	<tr>
+		<th>user_id</th>
+		<th>event</th>
+		<th>message</th>
+		<th>created_at</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>app-will-enter-foreground</td>
+		<td>app will enter foreground</td>
+		<td>2017-04-06 19:08:28.983+00</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>app-did-become-active</td>
+		<td>app did become active</td>
+		<td>2017-04-06 19:08:29.388+00</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>app-launch</td>
+		<td>app launched, monitoring CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1), os_version=10.3.1, systemUpTime=293.531426583333, options=Optional([__C.UIApplicationLaunchOptionsKey(_rawValue: UIApplicationLaunchOptionsLocationKey): 1])</td>
+		<td>2017-04-06 19:08:32.572+00</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>did-enter-region</td>
+		<td>did enter region CLBeaconRegion (identifier:'manual-ibeacon-test.envoy.com', uuid:EAD09230-2176-4ABD-85A0-A54A8EB343B1, major:1, minor:1)</td>
+		<td>2017-04-06 19:08:32.597+00</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>cl-authorized-always</td>
+		<td>CoreLocation authorized always</td>
+		<td>2017-04-06 19:08:32.6+00</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>cb-power-on</td>
+		<td>CoreBluetooth power on</td>
+		<td>2017-04-06 19:08:32.601+00</td>
+	</tr>
+</table>
