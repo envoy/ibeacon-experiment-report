@@ -235,7 +235,7 @@ but, my bet is somehow iPhone is confused, maybe it thinks it's in the region, s
 	</tr>
 </table>
 
-6. exit working
+## 6. exit working
 
 <table>
 	<tr>
